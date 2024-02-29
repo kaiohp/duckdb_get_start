@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "duckdb-get-start"
+version = "0.1.0"
+description = "Start a DuckDb and Python Project End to End"
+authors = ["Kaio Silva <kaio.silva1.ext@bayer.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.3"
+pre-commit = "^3.6.2"
+taskipy = "^1.12.2"
+black = "^24.2.0"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+flake8-bugbear = "^24.2.6"
+commitizen = "^3.16.0"
+pytest = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
